@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ibarra Real Nova";
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+#scroll-container {
+    padding: 20px;
+    border: 3px solid red;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 20%;
+    justify-content: center;
+}
+
+#scroll-container img {
+    padding-left: 1%;
+    height: 40px;
+    width: 40px;
+}
+
+#scroll-text {
+    text-align: right;
+    /* animation properties */
+    -moz-transform: translateX(-95%);
+    -webkit-transform: translateX(-95%);
+    transform: translateX(-95%);
+    -moz-animation: my-animation 30s linear infinite;
+    -webkit-animation: my-animation 30s linear infinite;
+    animation: my-animation 30s linear infinite;
+}
+
+
+/* for Firefox */
+
+@-moz-keyframes my-animation {
+    from {
+        -moz-transform: translateX(-100%);
+    }
+    to {
+        -moz-transform: translateX(100%);
+    }
+}
+
+
+/* for Chrome */
+
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateX(-100%);
+    }
+    to {
+        -webkit-transform: translateX(100%);
+    }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    to {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+.container {
+    /*background: linear-gradient(#737373, #FFF);*/
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 40rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    /*background: linear-gradient(#FF0000, #737373);*/
+}
+
+.logo {
+    min-height: 40vh;
+    display: flex;
+    transition: all 0.75s ease-out;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* .circle {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(#737373, #FF0000);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+} */
+
+.logo img {
+    width: 20rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.info h1 {
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.sizes button {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858
+}
+
+button.active {
+    background: #585858;
+    color: #FFFF;
+}
+
+.opensea {
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+}
+
+.opensea button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #FF0000;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
