@@ -292,7 +292,6 @@ input, textarea, button{
     color: #00c000;
     border: #f1f3f4;
     border-radius: 5px;
-    box-shadow:0 0 5px 2px rgba(255, 255, 255, 0.25); 
 }
 
 .submit-button{
