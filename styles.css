@@ -287,7 +287,7 @@ body {
 }
 
 .form-field:focus {
-    background-image: linear-gradient(to left, black, rgb(44, 44, 44));
+    background-image: linear-gradient(to left, black, rgb(48, 48, 48));
     /* Update background position for animation */
     background-position: right center;
 }
@@ -333,11 +333,14 @@ button {
     color: #0a0a0a;
     padding: 5px;
     margin-top: 3px;
+    border: 2px solid transparent;
 }
 
 .submit-button:hover {
-    background-color: #E1306C;
-    color: #0a0a0a;
+    background-color: #0a0a0a;
+    color: #fff;
+    border: 2px solid;
+    border-color: #00f700;
     padding: 5px;
     margin-top: 3px;
 }
